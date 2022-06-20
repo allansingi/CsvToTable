@@ -19,7 +19,7 @@ public class RecordServiceImpl implements RecordService{
     @Autowired
     private RecordDTO rdto;
 
-    public void parseCsvRecordFileToTable(){
+    public void parseCsvRecordFileToTable() {
         try {
 
             String line = "";
