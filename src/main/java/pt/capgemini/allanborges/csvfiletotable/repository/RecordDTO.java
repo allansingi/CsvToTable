@@ -12,8 +12,7 @@ public interface RecordDTO extends JpaRepository<Record, Integer>{
 
     List<Record> findByDate(String date);
     List<Record> findByDistrictsAndDate(String district, String date);
-
-    //@Query("SELECT r.districts, SUM(r.infections) FROM Record AS r GROUP BY r.districts")
+    
     @Query("SELECT new Record(r.districts, SUM(r.infections)) FROM Record AS r GROUP BY r.districts")
     List<Record> findNewCasesSumByDistricts();
 }
