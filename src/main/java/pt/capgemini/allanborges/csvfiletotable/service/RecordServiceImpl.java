@@ -69,7 +69,7 @@ public class RecordServiceImpl implements RecordService{
     }
 
     @Override
-    public String generateDate(){
+    public String generateDate() {
         Date date = new Date();
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
         return dateFormat.format(date);
