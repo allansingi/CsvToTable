@@ -53,7 +53,7 @@ public class RecordServiceImpl implements RecordService{
                         record.setInfections(data.get(i + 1));
                         rdto.save(record);
                     }
-                } else if(data.size() == 309){
+                } else if(data.size() == 309) {
                     for (int i = 0; i < headers.size(); i++) {
                         Record record = new Record();
                         record.setDistricts(headers.get(i));
